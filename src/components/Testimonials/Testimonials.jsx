@@ -4,26 +4,26 @@ import Slider from "react-slick";
 const TestimonialData = [
   {
     id: 1,
-    name: "Victor",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    name: "Surendhiran Sweet",
+    text: "Absolutely love the printed shirts! They are super comfortable and stylish. Definitely my go-to for casual outings.",
     img: "https://picsum.photos/101/101",
   },
   {
     id: 2,
-    name: "Satya Nadella",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    name: "Dhaunsh",
+    text: "The quality of the women's shirts is amazing. They fit perfectly and feel great. I highly recommend them.",
     img: "https://picsum.photos/102/102",
   },
   {
     id: 3,
-    name: "Virat Kohli",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    name: "Vinoth",
+    text: "Amazing collection of shirts. I get so many compliments whenever I wear them. Perfect for every occasion.",
     img: "https://picsum.photos/104/104",
   },
   {
     id: 5,
-    name: "Sachin Tendulkar",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque reiciendis inventore iste ratione ex alias quis magni at optio",
+    name: "Sathish Kumar",
+    text: "Great value for money ! These shirts are stylish and very comfortable.",
     img: "https://picsum.photos/103/103",
   },
 ];
@@ -78,9 +78,12 @@ const Testimonials = () => {
           <h1 data-aos="fade-up" className="text-3xl font-bold">
             Testimonials
           </h1>
-          <p data-aos="fade-up" className="text-xs text-gray-400">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
-            asperiores modi Sit asperiores modi
+          <p
+            data-aos="fade-up"
+            className="mb-10 max-w-[600px] font-semibold mx-auto text-xs text-cyan-500"
+          >
+            They are often used in marketing materials, Websites, Social
+            Media, and Email campaigns to encourage conversions.
           </p>
         </div>
 
@@ -91,18 +94,18 @@ const Testimonials = () => {
               <div className="my-6">
                 <div
                   key={data.id}
-                  className="flex flex-col gap-4 shadow-lg py-8 px-6 mx-4 rounded-xl dark:bg-slate-600  bg-primary/10 relative"
+                  className="relative flex flex-col gap-4 px-6 py-8 mx-4 shadow-lg rounded-xl dark:bg-slate-600 bg-primary/10"
                 >
                   <div className="mb-4">
                     <img
                       src={data.img}
                       alt=""
-                      className="rounded-full w-20 h-20"
+                      className="w-20 h-20 rounded-full"
                     />
                   </div>
                   <div className="flex flex-col items-center gap-4">
                     <div className="space-y-3">
-                      <p className="text-xs dark:text-slate-300 text-gray-500">
+                      <p className="text-xs text-gray-500 dark:text-slate-300">
                         {data.text}
                       </p>
                       <h1 className="text-xl font-bold dark:text-slate-300 text-black/80 dark:text-light">
@@ -110,7 +113,7 @@ const Testimonials = () => {
                       </h1>
                     </div>
                   </div>
-                  <p className="text-black/20  text-9xl font-serif absolute top-0 right-0"></p>
+                  <p className="absolute top-0 right-0 font-serif text-black/20 text-9xl"></p>
                 </div>
               </div>
             ))}

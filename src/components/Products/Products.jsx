@@ -11,13 +11,13 @@ const ProductsData = [
     img: Img1,
     title: "Women Ethnic",
     rating: 5.0,
-    color: "white",
+    color: "White",
     aosDelay: "0",
   },
   {
     id: 2,
     img: Img2,
-    title: "Women western",
+    title: "Women Western",
     rating: 4.5,
     color: "Red",
     aosDelay: "200",
@@ -27,13 +27,13 @@ const ProductsData = [
     img: Img3,
     title: "Goggles",
     rating: 4.7,
-    color: "brown",
+    color: "Brown",
     aosDelay: "400",
   },
   {
     id: 4,
     img: Img4,
-    title: "Printed T-Shirt",
+    title: "Printed T-shirt",
     rating: 4.4,
     color: "Yellow",
     aosDelay: "600",
@@ -41,7 +41,7 @@ const ProductsData = [
   {
     id: 5,
     img: Img2,
-    title: "Fashin T-Shirt",
+    title: "Fashion T-shirt",
     rating: 4.5,
     color: "Pink",
     aosDelay: "800",
@@ -50,7 +50,7 @@ const ProductsData = [
 
 const Products = () => {
   return (
-    <div className="mt-14 mb-12">
+    <div className="mb-12 mt-14">
       <div className="container">
         {/* Header section */}
         <div className="text-center mb-10 max-w-[600px] mx-auto">
@@ -60,14 +60,16 @@ const Products = () => {
           <h1 data-aos="fade-up" className="text-3xl font-bold">
             Products
           </h1>
-          <p data-aos="fade-up" className="text-xs text-gray-400">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit
-            asperiores modi Sit asperiores modi
+          <p
+            data-aos="fade-up"
+            className="text-center font-semibold text-cyan-500 mb-10 max-w-[600px] mx-auto"
+          >
+            Browse Our Best - Selling Products Handpicked By Our Customers!
           </p>
         </div>
         {/* Body section */}
         <div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center">
             {/* card section */}
             {ProductsData.map((data) => (
               <div
@@ -94,7 +96,7 @@ const Products = () => {
           </div>
           {/* view all button */}
           <div className="flex justify-center">
-            <button className="text-center mt-10 cursor-pointer bg-primary text-white py-1 px-5 rounded-md">
+            <button className="px-5 py-1 mt-10 text-center text-white rounded-md cursor-pointer bg-primary">
               View All Button
             </button>
           </div>

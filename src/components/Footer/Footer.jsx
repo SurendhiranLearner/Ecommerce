@@ -44,31 +44,33 @@ const Footer = () => {
   return (
     <div className="text-white bg-[#212529]">
       <div className="container">
-        <div data-aos="zoom-in" className="grid md:grid-cols-3 pb-44 pt-5">
+        <div data-aos="zoom-in" className="grid pt-5 md:grid-cols-3 pb-44">
           {/* company details */}
-          <div className="py-8 px-4">
-            <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-1">
+          <div className="px-4 py-8">
+            <h1 className="flex items-center gap-1 mb-3 text-xl font-bold text-justify text-blue-400 sm:text-3xl sm:text-left">
               <FiShoppingBag size="30" />
               {/* <img src={footerLogo} alt="" className="max-w-[50px]" /> */}
               ShopMe
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum in
-              beatae ea recusandae blanditiis veritatis.
+              At Shopeme, we believe in making your shopping experience
+              seamless, enjoyable, and rewarding. From stylish fashion pieces to
+              everyday essentials, our curated collection offers the best in
+              quality and design.
             </p>
           </div>
 
           {/* Footer Links */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
+          <div className="grid grid-cols-2 col-span-2 sm:grid-cols-3 md:pl-10">
             <div>
-              <div className="py-8 px-4">
-                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
+              <div className="px-4 py-8">
+                <h1 className="mb-3 text-xl font-bold text-justify sm:text-xl sm:text-left">
                   Important Links
                 </h1>
                 <ul className="flex flex-col gap-3">
                   {FooterLinks.map((link) => (
                     <li
-                      className="cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-gray-200"
+                      className="text-gray-200 duration-300 cursor-pointer hover:text-primary hover:translate-x-1"
                       key={link.title}
                     >
                       <span>{link.title}</span>
@@ -78,14 +80,14 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <div className="py-8 px-4">
-                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
+              <div className="px-4 py-8">
+                <h1 className="mb-3 text-xl font-bold text-justify sm:text-xl sm:text-left">
                   Links
                 </h1>
                 <ul className="flex flex-col gap-3">
                   {FooterLinks.map((link) => (
                     <li
-                      className="cursor-pointer hover:text-primary hover:translate-x-1 duration-300 text-gray-200"
+                      className="text-gray-200 duration-300 cursor-pointer hover:text-primary hover:translate-x-1"
                       key={link.title}
                     >
                       <span>{link.title}</span>
@@ -112,11 +114,11 @@ const Footer = () => {
               <div className="mt-6">
                 <div className="flex items-center gap-3">
                   <FaMapLocationDot />
-                  <p>Indore, Madhya Pradesh</p>
+                  <p>259(1)Olaipatti, Steel Plant, Salem-636030</p>
                 </div>
                 <div className="flex items-center gap-3 mt-3">
                   <IoCall />
-                  <p>+91 123456789</p>
+                  <p>+91 9042540998</p>
                 </div>
               </div>
             </div>
